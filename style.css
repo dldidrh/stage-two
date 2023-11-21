@@ -1,0 +1,59 @@
+body {
+    overflow: hidden;
+    background-image: url('bg_img(2).png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.text {
+    font-family: 'DungGeunMo';
+    margin-top: 95px;
+    margin-left: 270px;
+    color: #ffffff;
+    line-height: 27px;
+}
+
+.game_bgimg_2 img {
+    width: 68.5%;
+    margin-top: 89px;
+    margin-left: 266px;
+}
